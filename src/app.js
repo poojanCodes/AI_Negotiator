@@ -2,7 +2,7 @@ import express from 'express';
 import connectToDb from './config/database.js';
 const app = express();
 import cors from 'cors';
-
+import gameRouter from './routes/game.routes.js';
 
 /*** 
  * Middlewares 
@@ -12,6 +12,13 @@ import cors from 'cors';
 app.use(express.json());
 app.use(cors());
 
+
+
+/**
+ * Controllers Routes
+ */
+
+app.use('/api/game',gameRouter)
 
 
 /**

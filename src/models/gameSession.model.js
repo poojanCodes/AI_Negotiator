@@ -24,7 +24,6 @@ const gameSessionSchema =  new mongoose.Schema({
 
     targetPrice : {
         type : Number , 
-        required : true
     },
 
     currentPrice : {
